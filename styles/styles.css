@@ -23,12 +23,11 @@
 
 /* general styles */
 body{
-    margin: 0;
     background-color: var(--white-color);
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     font-size: 14px;
-    letter-spacing: 0.03;
+    letter-spacing: 0.03em; 
 }
 /* reset */
 .list{
@@ -36,9 +35,29 @@ body{
     padding: 0;
     margin: 0;
 }
+.link{
+    text-decoration: none;
+}
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
+}
+button{
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
 }
 /* style hidden */
 .visually-hidden {
@@ -56,12 +75,10 @@ img {
 }
 /* container */
 .container{
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
 
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -76,8 +93,6 @@ img {
     line-height: 1.19;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    text-decoration: none;
-    letter-spacing: 0.48px;
 }
 .logo-part{
     color: var(--accent-color);
@@ -101,7 +116,6 @@ img {
 
     color: var(--primary-text-color);
     text-decoration: none;
-    letter-spacing: 0.32px;
     font-weight: 500;
 }
 .site-nav .link:hover,
@@ -118,8 +132,6 @@ img {
 .contact,
 .contact-header{
     color: var(--contact-color);
-    text-decoration: none;
-    letter-spacing: 0.32px;
     font-style: normal;
     line-height: 1.71;
 }
@@ -141,12 +153,14 @@ img {
 }
 /* hero */
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 0;
+    padding-right: 0;
     background-color: var(--background-color-footer);
     text-align: center;
 }
 .title {
-    margin-top: 0;
-    margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     width: 696px;
@@ -155,12 +169,16 @@ img {
     font-size: 44px;
     line-height: 1.36;
     font-weight: 900;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
 }
 .button-service {
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    border-radius: 4px;
 
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -168,7 +186,7 @@ img {
     cursor: pointer;
     line-height: 1.88;
     font-weight: 700;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.06em;
 }
 
 .button-service:hover,
@@ -189,36 +207,26 @@ img {
 /* benefits */
 .benefits{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 .subtitle-benefits {
-    margin-top: 0;
-    margin-bottom: 0;
-
     text-transform: uppercase;
-    letter-spacing: 0.48px;
     line-height: 1.14;
     font-weight: 700;
 }
 .paragraph-benefits {
     margin-top: 9px;
-    margin-bottom: 0;
-    width: 272px;
+    width: 270px;
 
     color: var(--additional-color);
-    letter-spacing: 0.48px;
     line-height: 1.71;
 }
 
 
 /* what we do */
 .subtitle{
-    margin-top: 0;
-    margin-bottom: 0;
-
     font-size: 36px;
-    letter-spacing: 0.48px;
     text-align: center;
 }
 
@@ -227,7 +235,7 @@ img {
 }
 .our-work{
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     margin-top: 50px;
 }
 
@@ -235,41 +243,36 @@ img {
 /* our team */
 .team{
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
+    gap: 30px;
+    margin-top: 50px; 
+
 }
 .team .item{
     text-align: center;
+    background-color: var(--white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .subtitle-team{
-    margin-top: 30px;
-    margin-bottom: 0;
-
     font-size: 16px;
     font-weight: 500;
     line-height: 1.19;
-    letter-spacing: 0.48px;
     
 }
 .paragraph-team {
     margin-top: 10px;
-    margin-bottom: 0;
 
     color: var(--additional-color);
     font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.48px;
+    line-height: 1.18;
 }
 .section-team{
-    padding-top: 0;
-    padding-bottom: 0;
-
     background-color: var(--background-color);
 }
 
-.team-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
+.team .text{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* page porfolio */
@@ -279,30 +282,28 @@ img {
     text-align: center;
 }
 .buttons .buttons-item {
-    display: inline-block;
     padding-top: 6px;
     padding-bottom: 6px;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 22px;
+    padding-right: 22px;
     border-radius: 4px;
     border-color: transparent;
+    border-radius: 4px;
+    border: none;
 
     background-color: var(--background-color);
     cursor: pointer;
     font-size: 16px;
     line-height: 1.63;
     font-weight: 500;
-    letter-spacing: 0.32px;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .buttons .buttons-item:hover,
 .buttons .buttons-item:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
-}
-.button-app{
-    min-width: 145px;
 }
 .buttons .item{
     margin-right: 8px;
@@ -314,25 +315,20 @@ img {
 
 .examples-link {
     color: var(--primary-text-color);
-    text-decoration: none;
 }
 
 
 .subtitle-examples {
-    margin-top: 0;
-    margin-bottom: 0;
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 4px;
 
     font-size: 18px;
     line-height: 2.0;
-    letter-spacing: 0.96px;
+    letter-spacing: 0.06em;
 }
 
 .paragraph-examples {
-    margin-top: 4px;
-    margin-bottom: 0;
     padding-left: 24px;
     padding-top: 4px;
     padding-bottom: 20px;
@@ -340,7 +336,6 @@ img {
     color: var(--additional-color);
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.32px;
 }
 .examples{
     display: flex;
@@ -350,8 +345,7 @@ img {
 .examples .item{
     margin-bottom: 30px;
     margin-right: 30px;
-    width: calc ((100% - 60px) / 3); 
-    border: 1px solid var(--border-image-color);  
+    width: calc ((100% - 60px) / 3);  
 }
 .examples .item:nth-child(3n) {
     margin-right: 0;
@@ -359,25 +353,30 @@ img {
 .examples .item:nth-last-child(-n+3) {
     margin-bottom: 0;
 }
+.text{
+    border: 1px solid var(--border-image-color);
+    border-top: none;
+}
 
 /* footer */
 .footer-page{
     background-color: var(--background-color-footer);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer{
     margin-top: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;    
+ 
 }
-.footer-contact{
-    width: 231px;
-}.footer-contact .item{
-    margin-top: 4px;
+.footer-contact .item:not(:first-child){
+    margin-top: 9px;
 }
 .address{
+    margin-top: 20px;
+}
+.footer-contact .address{
     color: var(--white-color);
     line-height: 1.71;
-    text-decoration: none;
     font-style: normal;
 }
 .address:hover,
@@ -389,5 +388,4 @@ img {
     font-size: 26px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    text-decoration: none;
 }
