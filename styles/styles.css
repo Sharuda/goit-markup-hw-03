@@ -132,17 +132,22 @@ p{
 .contact,
 .contact-header{
     color: var(--contact-color);
-    font-style: normal;
-    line-height: 1.71;
+    font-style: normal;  
+    
 }
 .header-page .contact-header {
     color: var(--additional-color);
+    font-weight: 500;
+    line-height: 1.14;
 }
 .contact:hover,
 .contact:focus,
 .contact-header:hover,
 .contact-header:focus {
     color: var(--accent-color);
+}
+.contact{
+    line-height: 1.71;
 }
 .contact-list {
     display: flex;
@@ -214,6 +219,7 @@ p{
     text-transform: uppercase;
     line-height: 1.14;
     font-weight: 700;
+    font-size: 14px;
 }
 .paragraph-benefits {
     margin-top: 9px;
@@ -319,19 +325,13 @@ p{
 
 
 .subtitle-examples {
-    padding-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 4px;
-
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
 }
 
 .paragraph-examples {
-    padding-left: 24px;
-    padding-top: 4px;
-    padding-bottom: 20px;
+    margin-top: 4px;
 
     color: var(--additional-color);
     font-size: 16px;
@@ -354,6 +354,10 @@ p{
     margin-bottom: 0;
 }
 .text{
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 1px solid var(--border-image-color);
     border-top: none;
 }
